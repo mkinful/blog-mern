@@ -1,11 +1,13 @@
-import './mainnav.css';
+import '../navbar/navbar.css';
+import image1 from '../images/sheet1.jpg';
 
-export const MainNav = () => {
+export const NavBar = () => {
     return (
         <div className="main-nav">
-            <div className="navLeft"><i className="fab fa-facebook"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
+            <div className="navLeft">
+                <i className="navIcon fab fa-facebook"></i>
+                <i className="navIcon fab fa-twitter"></i>
+                <i className="navIcon fab fa-instagram"></i>
             </div>
             <div className="navCenter">
                 <ul className="navList">
@@ -17,7 +19,7 @@ export const MainNav = () => {
                 </ul>
             </div>
             <div className="navRight">
-                <img className="mainImg" src="" alt="main" />
+                <img className="mainImg" src={image1} alt="main" />
                 <i className="searchIcon fas fa-search"></i>
             </div>
         </div>
