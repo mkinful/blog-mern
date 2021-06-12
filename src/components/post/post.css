@@ -1,0 +1,28 @@
+.post {
+    width: 385px;
+    margin: 0px 25px 40px 25px;
+}
+
+.postImg {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postSections {
+    font-family: 'Merienda', cursive;
+    font-family: 'Viaoda Libre', cursive; 
+    font-size: .8rem;
+    color: crimson;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}

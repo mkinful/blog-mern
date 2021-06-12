@@ -1,5 +1,5 @@
-import '../navbar/navbar.css';
-import image1 from '../images/sheet1.jpg';
+import '../navbar/navbar.css'
+import image1 from '../../images/sheet1.jpg';
 
 export const NavBar = () => {
     return (
@@ -8,12 +8,13 @@ export const NavBar = () => {
                 <i className="navIcon fab fa-facebook"></i>
                 <i className="navIcon fab fa-twitter"></i>
                 <i className="navIcon fab fa-instagram"></i>
+                <i className="navIcon fab fa-youtube"></i>
             </div>
             <div className="navCenter">
                 <ul className="navList">
                     <li className="navListItem">Home</li>
+                    <li className="navListItem">Compositions</li>
                     <li className="navListItem">About</li>
-                    <li className="navListItem">Contact</li>
                     <li className="navListItem">Write</li>
                     <li className="navListItem">Account</li>
                 </ul>
