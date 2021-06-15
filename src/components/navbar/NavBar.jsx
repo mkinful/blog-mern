@@ -1,7 +1,9 @@
 import '../navbar/navbar.css'
 import image1 from '../../images/sheet1.jpg';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
+    const user = false;
     return (
         <div className="main-nav">
             <div className="navLeft">
@@ -12,15 +14,27 @@ export const NavBar = () => {
             </div>
             <div className="navCenter">
                 <ul className="navList">
-                    <li className="navListItem">Home</li>
-                    <li className="navListItem">Compositions</li>
-                    <li className="navListItem">About</li>
-                    <li className="navListItem">Write</li>
-                    <li className="navListItem">Account</li>
+                    <li className="navListItem"><Link className="navLinks" to="/">Home</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/post">Compositions</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/user">User Created</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/">About</Link></li>
+                    <li className="navListItem">
+                        {user && 'LOGOUT'}
+                    </li>
                 </ul>
             </div>
             <div className="navRight">
-                <img className="mainImg" src={image1} alt="main" />
+                {
+                    user ? (
+                        <img className="mainImg" src={image1} alt="main" />
+                    ) : (
+                        <ul className="navList">
+                        <li className="navListItem"><Link className="navLinks" to="login">Login</Link></li>
+                        <li className="navListItem"><Link className="navLinks" to="register">Register</Link></li>
+                        </ul>
+                    )
+                }
+
                 <i className="searchIcon fas fa-search"></i>
             </div>
         </div>

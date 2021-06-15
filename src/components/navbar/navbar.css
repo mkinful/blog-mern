@@ -46,6 +46,11 @@
     cursor: pointer;
 }
 
+.navLinks {
+    text-decoration: none;
+    color: inherit;
+}
+
 .searchIcon {
     font-size: 2rem;
     color:black;
