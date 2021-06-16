@@ -1,0 +1,59 @@
+.main-nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(254, 254, 255);
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navLeft, .navRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navCenter {
+    flex: 6;
+}
+
+.mainImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navIcon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navListItem {
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: inherit;
+}
+
+.searchIcon {
+    font-size: 2rem;
+    color:black;
+    cursor: pointer;
+    margin-left: .8rem;
+}

@@ -1,0 +1,59 @@
+.sidebar {
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgba(245, 240, 240, 0.315);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarTitle {
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.sidebarItem > p {
+    padding: 2.9rem;
+}
+
+.sidebarList {
+    list-style: none;
+    margin-bottom: 30px;   
+}
+
+.sidebarListItem {
+    display: inline-block;
+    width: 50%;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.sidebarSocial {
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biopic {
+    margin-top: 15px;
+}
+
