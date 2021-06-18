@@ -15,8 +15,11 @@ export const NavBar = () => {
             <div className="navCenter">
                 <ul className="navList">
                     <li className="navListItem"><Link className="navLinks" to="/">Home</Link></li>
-                    <li className="navListItem"><Link className="navLinks" to="/post">Compositions</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/post">Orchestral</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/post">Jazz</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/post">R&B</Link></li>
                     <li className="navListItem"><Link className="navLinks" to="/user">User Created</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/about">About Me</Link></li>
                     <li className="navListItem">
                         {user && 'LOGOUT'}
                     </li>

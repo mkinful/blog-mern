@@ -1,0 +1,60 @@
+.champPost {
+    flex: 9;
+}
+
+.champPostWrapper {
+    padding: 1.7rem;
+    padding-right: 0;
+}
+
+.champPostImg {
+    width: 100%;
+    height: 350px;
+    border-radius: .3rem;
+    object-fit: cover;
+}
+
+.champPostTitle {
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.1rem;
+}
+
+.champPostEdit {
+    float: right;
+    font-size: 2.2rem;
+}
+
+.champPostIcon {
+    margin-left: .7rem;
+    cursor: pointer;
+}
+
+.champPostIcon:first-child {
+    color: rgb(250, 155, 12)
+}
+
+.champPostIcon:last-child {
+    color: crimson
+}
+
+.champPostInfo {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(216, 15, 109);
+}
+
+.champPostDescript {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.champPostDescript::first-letter {
+    margin-left: 1.3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}

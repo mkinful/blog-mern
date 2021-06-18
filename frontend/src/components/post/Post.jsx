@@ -15,11 +15,14 @@ export default function Post() {
                 <span className="postDate">1 hour ago</span>
             </div>
             <p className="postDescript">
-            Composed in March 2020 as part of a Film Scoring Challenge, this piece accompanies the Main Title sequence for the classic Speilberg feature, "Catch Me If You Can". 
-            This hybrid of Bebop and Big Band Jazz was easily the most fun I had writing a piece of music. The most challenging aspect of the cue was never the composition, 
-            but rather the daunting task of rescoring the now iconic title sequence which is scored to perfection by the greatest living composer; John Williams. 
-            But once that nervousness went away, I was able to focus on a piece inspired by the brilliant Yoko Kanno's music for "Cowboy Bebop". 
-            I wanted the piece to have a "Cops and Robbers" feel to it while still capturing the fun tone of the movie. 
+                Written in March 2020, this piece was composed to accompany a film music scoring competition
+                in which we had to re-score the opening main titiles for the 2005 Speilberg classic, "Catch Me If You Can".
+                The daunting task for this challenge was writing something that originally had music from the great John Williams. 
+                <br />
+                The piece can be described as "Xylaphone concerto" since it is the dominant instrument that is heard throughout 
+                the piece. The title refers to the Vibraphone which utilizes a Fast Motor for added reverb, and Soft Mallets for a 
+                gentle color that is not too bright.  
+                    <br />
             </p>
         </div>
     )
