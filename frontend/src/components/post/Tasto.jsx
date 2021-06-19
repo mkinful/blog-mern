@@ -1,5 +1,6 @@
 import './tasto.css';
 import tastoImg from '../../images/tasto.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Tasto() {
     return (
@@ -7,12 +8,12 @@ export default function Tasto() {
             <img src={tastoImg} className="tastoImg" alt="tasto" />
             <div className="tastoInfo">
                 <div className="tastoSections">
-                    <span className="tastoSect">Orchestration Breakdowns</span>
-                    <span className="tastoSect">Libraries Used</span>
+                    <span className="tastoSect">Orchestral</span>
+                    <span className="tastoSect">Scoring Competition</span>
                 </div>
-                <span className="tastoTitle">Sul Tasto Kisses</span>
+                <span className="tastoTitle"><Link className="navLink" to="/kiss/sul">Sul Tasto Kisses</Link></span>
                 <hr />
-                <span className="tastoDate">1 hour ago</span>
+                {/* <span className="tastoDate">1 hour ago</span> */}
             </div>
             <p className="tastoDescript">
                 A romantic 30 second challenge which I thoroughly enjoyed writing, this piece is meant to capture

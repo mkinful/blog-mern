@@ -1,5 +1,6 @@
 import './surfing.css';
 import surfingImg from '../../images/surfing1.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Surfing() {
     return (
@@ -7,12 +8,12 @@ export default function Surfing() {
             <img src={surfingImg} className="surfingImg" alt="surfing" />
             <div className="surfingInfo">
                 <div className="surfingSections">
-                    <span className="surfingSect">Orchestration Breakdowns</span>
-                    <span className="surfingSect">Libraries Used</span>
+                    <span className="surfingSect">Orchestral</span>
+                    <span className="surfingSect">Scoring Competition</span>
                 </div>
-                <span className="surfingTitle">Staccato Surfing</span>
+                <span className="surfingTitle"><Link className="navLink" to="/waves/surf">Staccato Surfing</Link></span>
                 <hr />
-                <span className="surfingDate">1 hour ago</span>
+                {/* <span className="surfingDate">1 hour ago</span> */}
             </div>
             <p className="surfingDescript">
                 Composed as part of a "30 Second Challenge" from a Composer group on Facebook, this Challenge's goal was to have

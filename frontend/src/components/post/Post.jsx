@@ -1,5 +1,6 @@
 import './post.css';
 import bebopImg from '../../images/bebop.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Post() {
     return (
@@ -7,12 +8,12 @@ export default function Post() {
             <img src={bebopImg} className="postImg" alt="bebop" />
             <div className="postInfo">
                 <div className="postSections">
-                    <span className="postSect">Orchestration Breakdowns</span>
-                    <span className="postSect">Libraries Used</span>
+                    <span className="postSect">Big Band/Bebop Jazz</span>
+                    <span className="postSect">Film Score Contest</span>
                 </div>
-                <span className="postTitle">Soft Mallets, Fast Motor</span>
+                <span className="postTitle"><Link className="navLink" to="/post/bebop">Soft Mallets, Fast Motor</Link></span>
                 <hr />
-                <span className="postDate">1 hour ago</span>
+                {/* <span className="postDate">1 hour ago</span> */}
             </div>
             <p className="postDescript">
                 Written in March 2020, this piece was composed to accompany a film music scoring competition
@@ -22,7 +23,7 @@ export default function Post() {
                 The piece can be described as "Xylaphone concerto" since it is the dominant instrument that is heard throughout 
                 the piece. The title refers to the Vibraphone which utilizes a Fast Motor for added reverb, and Soft Mallets for a 
                 gentle color that is not too bright.  
-                    <br />
+                <br />
             </p>
         </div>
     )

@@ -1,9 +1,9 @@
 import './navbar.css'
-import image1 from '../../images/sheet1.jpg';
+import image1 from '../../images/Ein.png';
 import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
-    const user = false;
+    const user = true;
     return (
         <div className="main-nav">
             <div className="navLeft">
@@ -15,10 +15,8 @@ export const NavBar = () => {
             <div className="navCenter">
                 <ul className="navList">
                     <li className="navListItem"><Link className="navLinks" to="/">Home</Link></li>
-                    <li className="navListItem"><Link className="navLinks" to="/post">Orchestral</Link></li>
-                    <li className="navListItem"><Link className="navLinks" to="/post">Jazz</Link></li>
-                    <li className="navListItem"><Link className="navLinks" to="/post">R&B</Link></li>
-                    <li className="navListItem"><Link className="navLinks" to="/user">User Created</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/post/bebop">Compositions</Link></li>
+                    <li className="navListItem"><Link className="navLinks" to="/user">Create</Link></li>
                     <li className="navListItem"><Link className="navLinks" to="/about">About Me</Link></li>
                     <li className="navListItem">
                         {user && 'LOGOUT'}

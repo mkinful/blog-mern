@@ -1,5 +1,6 @@
 import './champagne.css';
 import smoothImg from '../../images/smoothj.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Champagne() {
     return (
@@ -7,12 +8,12 @@ export default function Champagne() {
             <img src={smoothImg} className="champagneImg" alt="champagne" />
             <div className="champagneInfo">
                 <div className="champagneSections">
-                    <span className="champagneSect">Orchestration Breakdowns</span>
-                    <span className="champagneSect">Libraries Used</span>
+                    <span className="champagneSect">Smooth Jazz</span>
+                    <span className="champagneSect">Jazz Collection</span>
                 </div>
-                <span className="champagneTitle">Champagne and Cigars</span>
+                <span className="champagneTitle"><Link className="navLink" to="/smooth/champ">Champagne and Cigars</Link></span>
                 <hr />
-                <span className="champagneDate">1 hour ago</span>
+                {/* <span className="champagneDate">1 hour ago</span> */}
             </div>
             <p className="champagneDescript">
                 Composed in June 2012, this piece began life as the bass guitar melody that opens the piece. After 3 and half

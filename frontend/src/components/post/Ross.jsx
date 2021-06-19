@@ -1,5 +1,6 @@
 import './ross.css';
 import rossImg from '../../images/ross.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Ross() {
     return (
@@ -7,12 +8,12 @@ export default function Ross() {
             <img src={rossImg} className="rossImg" alt="ross" />
             <div className="rossInfo">
                 <div className="rossSections">
-                    <span className="rossSect">Orchestration Breakdowns</span>
-                    <span className="rossSect">Libraries Used</span>
+                    <span className="rossSect">R&B</span>
+                    <span className="rossSect">R&B Collection</span>
                 </div>
-                <span className="rossTitle">Bob Ross</span>
+                <span className="rossTitle"><Link className="navLink" to="/rnb/bob">Bob Ross</Link></span>
                 <hr />
-                <span className="rossDate">1 hour ago</span>
+                {/* <span className="rossDate">1 hour ago</span> */}
             </div>
             <p className="rossDescript">
                 Written in the ancient by gone era of 2009, this R&B track was originally composed for a 

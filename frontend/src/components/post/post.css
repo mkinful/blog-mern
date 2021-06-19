@@ -54,3 +54,8 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+
+.navLink {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,45 +1,45 @@
-.singlePost {
+.champPost {
     flex: 9;
 }
 
-.singlePostWrapper {
+.champPostWrapper {
     padding: 1.7rem;
     padding-right: 0;
 }
 
-.singlePostImg {
+.champPostImg {
     width: 100%;
     height: 350px;
     border-radius: .3rem;
     object-fit: cover;
 }
 
-.singlePostTitle {
+.champPostTitle {
     text-align: center;
     margin: 1rem;
     font-family: 'Caveat', cursive;
     font-size: 2.1rem;
 }
 
-.singlePostEdit {
+.champPostEdit {
     float: right;
     font-size: 2.2rem;
 }
 
-.singlePostIcon {
+.champPostIcon {
     margin-left: .7rem;
     cursor: pointer;
 }
 
-.singlePostIcon:first-child {
+.champPostIcon:first-child {
     color: rgb(250, 155, 12)
 }
 
-.singlePostIcon:last-child {
+.champPostIcon:last-child {
     color: crimson
 }
 
-.singlePostInfo {
+.champPostInfo {
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -48,12 +48,12 @@
     color: rgb(216, 15, 109);
 }
 
-.singlePostDescript {
+.champPostDescript {
     font-size: 1.2rem;
     line-height: 2rem;
 }
 
-.singlePostDescript::first-letter {
+.champPostDescript::first-letter {
     margin-left: 1.3rem;
     font-size: 2rem;
     font-weight: bold;

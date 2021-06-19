@@ -1,7 +1,10 @@
 import './singlepost.css'
 import Bebop from '../../images/bebop.jpg'
+import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom';
 
 export default function SinglePost() {
+    
     return (
         <div className="singlePost">
             <div className="singlePostWrapper">
@@ -16,6 +19,10 @@ export default function SinglePost() {
                 <div className="singlePostInfo">
                     <span className="singlePostAuthor"> Author: <b>Ebo</b> </span>
                     <span className="singlePostDate"> 1 hour ago </span>
+                </div>
+
+                <div className="musicLink">
+                <ReactPlayer controls url='https://youtu.be/4tz1L7JhWOo'/>
                 </div>
                 <p className="singlePostDescript">
                     Written in March 2020, this piece was composed to accompany a film music scoring competition
@@ -42,6 +49,21 @@ export default function SinglePost() {
                     I do work faster with FL Studio due to the speed and the smoothness for the user interface. 
                 </p>
             </div>
+            
+                <div className="main-nav">
+                    <div className="navCenter">
+                        <ul className="navList">
+                            <li className="navListItem"><Link className="navLinks" to="/">Home</Link></li>
+                            <li className="navListItem"><Link className="navLinks" to="/post/bebop">Compositions</Link></li>
+                            <li className="navListItem"><Link className="navLinks" to="/user">Create</Link></li>
+                            <li className="navListItem"><Link className="navLinks" to="/about">About Me</Link></li>
+                        </ul>
+                    </div>
+
+            </div>
+
         </div>
+
+        
     )
 }

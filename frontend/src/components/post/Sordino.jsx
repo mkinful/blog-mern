@@ -1,5 +1,6 @@
 import './sordino.css';
 import sordinoImg from '../../images/sordino.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Sordino() {
     return (
@@ -7,16 +8,18 @@ export default function Sordino() {
             <img src={sordinoImg} className="sordinoImg" alt="sordino" />
             <div className="sordinoInfo">
                 <div className="sordinoSections">
-                    <span className="sordinoSect">Orchestration Breakdowns</span>
-                    <span className="sordinoSect">Libraries Used</span>
+                    <span className="sordinoSect">Orchestral</span>
+                    <span className="sordinoSect">Scoring Competition</span>
                 </div>
-                <span className="sordinoTitle">Hurricane Sordino</span>
+                <span className="sordinoTitle"><Link className="navLink" to="/storm/sord">Hurricaine Sordino</Link></span>
                 <hr />
-                <span className="sordinoDate">1 hour ago</span>
+                {/* <span className="sordinoDate">1 hour ago</span> */}
             </div>
             <p className="sordinoDescript">
-                Composed as part of a "30 Second Challenge", this is a piece I consider to be one of my finest 
-                piece of work due to the complexity of the orchestrations, the mixed meters and the changing time signatures. 
+                Composed as part of a "30 Second Challenge", this monstrous piece of music was that rare moment in which I get 
+                to go crazy with the orchestra. Nothing gentle, soft, or beautiful, just pure choas and madness mixed with 
+                irritation and anger. 
+                
             </p>
         </div>
     )
