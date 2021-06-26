@@ -7,8 +7,8 @@ import Photo from './components/pages/single/Photo';
 import Bob from './components/pages/single/Bob';
 import Sord from './components/pages/single/Sord';
 import Rock from './components/pages/single/Rock';
-import Sul from './components/pages/single/Sul';
-import Falls from './components/pages/single/Fall';
+import Kiki from './components/pages/single/Kia';
+import Fanfare from './components/pages/single/Fan';
 import User from './components/pages/user/User';
 import Settings from './components/pages/settings/Settings';
 import Login from './components/pages/login/Login';
@@ -35,9 +35,9 @@ function App() {
           <Route path="/rnb/:bob"><Bob /></Route>
           <Route path="/storm/:sord"><Sord /></Route>
           <Route path="/train/:rocky"><Rock /></Route>
-          <Route path="/kiss/:sul"><Sul /></Route>
-          <Route path="/fall/:autumn"><Falls /></Route>
-        </Switch>
+          <Route path="/kiki/:lullaby"><Kiki /></Route>
+          <Route path="/fanfare/:comics"><Fanfare /></Route>
+          </Switch>
     </Router>
     
   );

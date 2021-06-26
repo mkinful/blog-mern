@@ -8,7 +8,7 @@ export default function PhotoPost() {
     return (
         <div className="photoPost">
             <div className="photoPostWrapper">
-                <img src={Photo} className="photoPostImg" alt="bebop" />
+                <img src={Photo} className="photoPostImg" alt="nostalgia" />
                 <h1 className="photoPostTitle">
                     Old Photographs
                     <div className="photoPostEdit">

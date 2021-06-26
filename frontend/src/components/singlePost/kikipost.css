@@ -1,45 +1,45 @@
-.autumnPost {
+.kikiPost {
     flex: 9;
 }
 
-.autumnPostWrapper {
+.kikiPostWrapper {
     padding: 1.7rem;
     padding-right: 0;
 }
 
-.autumnPostImg {
+.kikiPostImg {
     width: 100%;
     height: 350px;
     border-radius: .3rem;
     object-fit: cover;
 }
 
-.autumnPostTitle {
+.kikiPostTitle {
     text-align: center;
     margin: 1rem;
     font-family: 'Caveat', cursive;
     font-size: 2.1rem;
 }
 
-.autumnPostEdit {
+.kikiPostEdit {
     float: right;
     font-size: 2.2rem;
 }
 
-.autumnPostIcon {
+.kikiPostIcon {
     margin-left: .7rem;
     cursor: pointer;
 }
 
-.autumnPostIcon:first-child {
+.kikiPostIcon:first-child {
     color: rgb(250, 155, 12)
 }
 
-.autumnPostIcon:last-child {
+.kikiPostIcon:last-child {
     color: crimson
 }
 
-.autumnPostInfo {
+.kikiPostInfo {
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -48,12 +48,12 @@
     color: rgb(216, 15, 109);
 }
 
-.autumnPostDescript {
+.kikiPostDescript {
     font-size: 1.2rem;
     line-height: 2rem;
 }
 
-.autumnPostDescript::first-letter {
+.kikiPostDescript::first-letter {
     margin-left: 1.3rem;
     font-size: 2rem;
     font-weight: bold;

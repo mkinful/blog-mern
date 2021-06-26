@@ -1,9 +1,21 @@
 import './sidebar.css';
 import aboutImg from '../../images/about1.jpg'; 
-
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import React from 'react'
+import axios from 'axios';
 
 export default function SideBar() {
+    const [gens, setGenre] = useState([]);
+
+    useEffect(()=> {
+        const getGenre = async ()=>
+        {
+            const res = await axios.get('/genres')
+            setGenre(res.data);
+        };
+        getGenre();
+    },[]);
     return (
         <div className="sidebar">
             <div className="sidebarItem">
@@ -25,12 +37,11 @@ export default function SideBar() {
             <div className="sidebarItem">
                 <span className="sidebarTitle">Genres</span>
                 <ul className="sidebarList">
-                    <li className="sidebarListItem">Orchestral</li>
-                    <li className="sidebarListItem">Bebop Jazz</li>
-                    <li className="sidebarListItem">Smooth Jazz</li>
-                    <li className="sidebarListItem">Film Scoring Contests</li>
-                    <li className="sidebarListItem">Rhythm and Blues</li>
-                    <li className="sidebarListItem">30 Second Scoring Challenges</li>
+                    {gens.map((g) => (
+                        <Link to={`/?gens=${g.name}`} className="navLinks">
+                        <li className="sidebarListItem">Orchestral</li>
+                        </Link>
+                    ))}
                 </ul>
             </div>
             <div className="sidebarItem">
