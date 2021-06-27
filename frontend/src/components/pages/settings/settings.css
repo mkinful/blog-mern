@@ -14,14 +14,14 @@
 }
 
 .settingsUpdateTitle {
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-bottom: 1.4rem;
     color: rgb(252, 14, 192);
 }
 
 .settingsDeleteTitle {
     color: crimson;
-    font-size: 1rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .settingsForm > input {
-    color: rgb(228, 228, 228);
+    color: black;
     margin: .7rem 0;
     height: 1.9rem;
     border: none;

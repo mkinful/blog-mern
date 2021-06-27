@@ -33,7 +33,7 @@ export const NavBar = () => {
             <div className="navRight">
                 {
                     user ? (
-                        <img className="mainImg" src={user.profilePic} alt="main" />
+                        <Link to="/settings"><img className="mainImg" src={user.profilePic} alt="main" /></Link>
                     ) : (
                         <ul className="navList">
                         <li className="navListItem"><Link className="navLinks" to="/login">Login</Link></li>
