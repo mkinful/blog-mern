@@ -14,10 +14,12 @@ import Settings from './components/pages/settings/Settings';
 import Login from './components/pages/login/Login';
 import Register from './components/pages/register/Register';
 import SideBar from './components/sidebar/Sidebar';
+import { Context } from './context/Context';
+import { useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  const user = true;
+  const { user } = useContext(Context);
   return (
     <Router>
       <NavBar />

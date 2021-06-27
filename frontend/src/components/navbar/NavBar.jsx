@@ -1,9 +1,16 @@
 import './navbar.css'
 import image1 from '../../images/Ein.png';
 import { Link } from 'react-router-dom';
+import { Context } from '../../context/Context';
+import { useContext } from 'react';
 
 export const NavBar = () => {
-    const user = true;
+    const { user, dispatch } = useContext(Context);
+
+    const handleLogout = () => {
+        dispatch({ type: 'LOGOUT' })
+    }
+    
     return (
         <div className="main-nav">
             <div className="navLeft">
@@ -18,7 +25,7 @@ export const NavBar = () => {
                     <li className="navListItem"><Link className="navLinks" to="/post/bebop">Compositions</Link></li>
                     <li className="navListItem"><Link className="navLinks" to="/user">Create</Link></li>
                     <li className="navListItem"><Link className="navLinks" to="/about">About Me</Link></li>
-                    <li className="navListItem">
+                    <li className="navListItem" onClick={handleLogout}>
                         {user && 'LOGOUT'}
                     </li>
                 </ul>
@@ -26,11 +33,11 @@ export const NavBar = () => {
             <div className="navRight">
                 {
                     user ? (
-                        <img className="mainImg" src={image1} alt="main" />
+                        <img className="mainImg" src={user.profilePic} alt="main" />
                     ) : (
                         <ul className="navList">
-                        <li className="navListItem"><Link className="navLinks" to="login">Login</Link></li>
-                        <li className="navListItem"><Link className="navLinks" to="register">Register</Link></li>
+                        <li className="navListItem"><Link className="navLinks" to="/login">Login</Link></li>
+                        <li className="navListItem"><Link className="navLinks" to="/register">Register</Link></li>
                         </ul>
                     )
                 }
